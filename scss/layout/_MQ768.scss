@@ -1,0 +1,35 @@
+@media (max-width: 767.98px) {
+  .option-links {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .option-links .option-card,
+  .option-links .option-card:nth-child(1),
+  .option-links .option-card:nth-child(2),
+  .option-links .option-card:nth-child(3),
+  .option-links .option-card:nth-child(4),
+  .option-links .option-card:nth-child(5) {
+    grid-column: auto !important;
+    width: 220px !important;
+  }
+
+  .option-card img {
+    width: 100% !important;
+    height: 280px !important;
+    object-fit: cover !important;
+    border-radius: 999px 999px 0 0 !important;
+  }
+
+  .option-card span {
+    display: block !important;
+    width: 100% !important;
+    text-align: left !important;
+    margin-top: 0.75rem !important;
+  }
+}

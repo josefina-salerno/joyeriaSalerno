@@ -1,0 +1,35 @@
+.site-footer {
+  background-color: #EBE3D5;
+  color: #865334;
+  padding: 2.5rem 0 1.5rem;
+  border-top: 1px solid rgba(134, 83, 52, 0.15);
+}
+
+.site-footer__logo {
+  width: 70px;
+  margin: 0 auto 1rem;
+}
+
+.site-footer__copy {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.site-footer__social {
+  @include flex-center(center, center);
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.site-footer__social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  @include flex-center();
+  background-color: #EEE9E5;
+  transition: transform 0.3s ease;
+}
+
+.site-footer__social a:hover {
+  transform: translateY(-3px);
+}

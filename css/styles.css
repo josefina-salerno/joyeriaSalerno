@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400;600;700&family=La+Belle+Aurore&display=swap");
+*{margin:0;padding:0;box-sizing:border-box}
+main {flex: 1;}
+html{scroll-behavior:smooth}
+body{font-family:"Josefin Slab",serif;background-color:#EEE9E5;color:#865334;line-height:1.5;min-height: 100vh; display: flex; flex-direction: column}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+.container-salerno{width:min(1320px,92vw);margin:0 auto}
+.site-header{position:sticky;top:0;left:0;width:100%;z-index:1030;height:0;padding-top:0;pointer-events:none}
+.navbar{padding:0}
+.nav-shell{width:calc(100vw - 24px)!important;max-width:none!important;margin:0 auto;background-color:rgba(235,227,213,.78);backdrop-filter:blur(8px);border:1px solid rgba(134,83,52,.12);border-radius:999px;padding:.16rem 1.15rem;min-height:46px;box-shadow:0 8px 24px rgba(0,0,0,.06);pointer-events:auto}
+.site-header__logo{width:42px;height:42px;object-fit:contain}
+.navbar-brand{margin-right:1rem;padding:0}
+.navbar-nav .nav-link{color:#865334;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:.25rem .7rem}
+.navbar-nav .nav-link:hover,.navbar-nav .nav-link:focus,.dropdown-item:hover,.dropdown-item:focus{color:#7C7A63}
+.dropdown-menu{border:none;border-radius:1rem;box-shadow:0 15px 35px rgba(0,0,0,.08);background-color:#EBE3D5;padding:.75rem}
+.dropdown-item{color:#865334;border-radius:.75rem;padding:.45rem .8rem}
+.navbar-toggler{border:none;box-shadow:none!important;padding:.05rem .25rem}
+.navbar-toggler-icon{width:1.4rem;height:1.4rem}
+.section-padding{padding:4.5rem 0}
+.section-kicker{font-family:"La Belle Aurore",cursive;font-size:2rem;color:#865334;margin-bottom:1rem}
+.hero{min-height:100vh;background-position:center;background-size:cover;display:grid;text-align:left;padding: 8rem 1.5rem 2rem 6%;justify-items: start; align-items: center;}
+.hero--home{min-height:115vh;background-image:linear-gradient(rgba(235,227,213,.12),rgba(235,227,213,.12)),url("../assets/img/portadaIndex.jpeg")}
+.hero__content--minimal{background:none;padding:0}
+.hero__title{font-family:"La Belle Aurore",cursive;font-size:clamp(2.6rem,5vw,4.6rem);margin-bottom:.2rem;color:#865334;text-shadow:0 1px 8px rgba(255,255,255,.18);}
+.section-popular{padding-top:2.5rem}
+.popular-shapes{display:flex;justify-content:space-between;align-items:flex-start;gap:3.25rem}
+.popular-shape-card,.option-card{display:flex;flex-direction:column;align-items:flex-start;flex:0 0 auto}
+.popular-shape-card{width:26.8%;max-width:268px}
+.popular-shape-card--center{margin-inline:auto}
+.popular-shape-card img{width:100%;height:360px;object-fit:cover;border-radius:999px 999px 0 0;display:block}
+.popular-shape-card p{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;margin-top:.75rem;position:static;z-index:3;padding-left:.1rem}
+.about-editorial{background-color:#8b896f;padding:1.5rem 0 2rem;color:#fff}
+.about-editorial__grid{display:grid;grid-template-columns:1.5fr .7fr;gap:2rem;align-items:center}
+.about-editorial__copy{padding:1rem 0 1rem .25rem}
+.about-editorial__copy p{font-family:"La Belle Aurore",cursive;font-size:1.55rem;line-height:1.7;color:#f8f3ef;opacity:.98}
+.about-editorial__frame{width:min(100%,240px);height:240px;background:#e6e4e4;justify-self:end; overflow: hidden;}
+.about-editorial__frame img{width: 100%; height: 100%; object-fit: cover;display: block; }
+.care-editorial{min-height: 540px;
+    background-image: linear-gradient(rgba(124,122,99,.12),rgba(124,122,99,.12)), url("../assets/img/Cuidados.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    display: flex;
+    align-items: stretch;}
+.care-editorial__content{width: 100%;
+    min-height: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 4rem 5rem;
+    gap: 2rem;}
+.care-editorial__copy{max-width:60%;padding-bottom:2rem}
+.care-editorial__copy p{font-family:"La Belle Aurore",cursive;font-size:1.5rem;color:#fff;line-height:1.5;margin-bottom:.4rem;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.care-editorial__title{margin:0 1rem 1.2rem 0;color:#fff;font-size:2.3rem;text-shadow:0 2px 8px rgba(0,0,0,.16)}
+.inspiration-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.inspiration-strip img{aspect-ratio:1/1;object-fit:cover;border-radius:0}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:1rem}
+.why-grid article{background:#f5f0ea;padding:1rem 1rem 1.4rem;border-radius:0;box-shadow:none}
+.why-grid h3{font-size:.95rem;letter-spacing:.08em;margin-bottom:.5rem}
+.anchor-offset{scroll-margin-top:90px}
+.site-footer{background-color:#EBE3D5;color:#865334;padding:2.5rem 0 1.5rem;border-top:1px solid rgba(134,83,52,.15)}
+.site-footer__logo{width: 150px;margin:0 auto 1rem}.site-footer__copy{font-size:.9rem;text-align:center}.site-footer__social{display:flex;justify-content:center;align-items:center;gap:1.2rem;margin-top:1rem}.site-footer__social a{width:42px;height:42px;border-radius:50%;display:flex;justify-content:center;align-items:center;background-color:#EEE9E5;transition:transform .3s ease}.site-footer__social a:hover{transform:translateY(-3px)}
+.floating-instagram{position:fixed;right:1.25rem;bottom:1.25rem;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#865334;color:#fff;font-size:1.5rem;box-shadow:0 12px 25px rgba(134,83,52,.28);z-index:1200}
+.floating-instagram:hover{color:#fff;transform:translateY(-3px)}
+.product-hero{min-height:64vh;color:#fff;display:flex;align-items:end;background-position:center 22% ;background-size:cover;padding:0 0 1.5rem; min-height: 90vh;}.product-hero__overlay{  width: 100%; background: transparent; padding: 7rem 0 1.2rem;}.product-hero__title{font-family:"La Belle Aurore",cursive;font-size:clamp(2.5rem,4vw,3.8rem)}
+.option-links{  display:grid; grid-template-columns: repeat(6, 1fr); gap: 3rem 2rem; max-width: 900px; margin: 0 auto; justify-items: center; align-items: start;}
+.option-card{width: 180px; text-align: left; position: relative;}
+.option-links .option-card:nth-child(1){grid-column: 1 / span 2;}
+.option-links .option-card:nth-child(2){grid-column: 3 / span 2;}
+.option-links .option-card:nth-child(3){grid-column: 5 / span 2;}
+.option-links .option-card:nth-child(4){grid-column: 2 / span 2;}
+.option-links .option-card:nth-child(5){grid-column: 4 / span 2;}
+.option-card img{width: 100%; height: 240px; object-fit: cover; border-radius: 999px 999px 0 0; display: block; margin-bottom: 0;}
+.option-card span{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;position:static;z-index:3;margin-top:.7rem;padding:0 .15rem}
+.product-section{padding:3rem 0 1rem}.product-section__title{font-family:"La Belle Aurore",cursive;font-size:1.8rem;margin-bottom:.35rem;color:#865334}.product-section__text{margin-bottom:1.5rem}.product-card{background-color:#fff;border-radius:1.25rem;box-shadow:0 10px 25px rgba(134,83,52,.08);overflow:hidden;height:100%}.product-card img{aspect-ratio:1/1.15;object-fit:cover}.product-card__body{padding:1rem}.product-card__title{font-size:1rem;margin-bottom:.25rem}.product-card__price{color:#7C7A63;font-weight:700}
+.stones-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; align-items: start;}
+.stone-card{background-color: transparent; display: flex; flex-direction: column;}
+.stone-card img{ width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block;}
+.stone-card__body{background-color: #f5f0ea; padding: 1rem; min-height: 170px;}
+.stone-card__body h3{font-size: 0.95rem; letter-spacing: 0.08em; margin-bottom: 0.6rem; color: #865334;}
+.stone-card__body p { margin: 0;color: #865334; line-height: 1.5;}
+@media (max-width:991.98px){.nav-shell{width:calc(100vw - 18px)!important;border-radius:1.2rem;padding:.35rem .9rem}.navbar-collapse{margin-top:.55rem;background:rgba(235,227,213,.95);border-radius:1rem;padding:.8rem 1rem}.navbar-nav{align-items:flex-start!important}.hero--home{min-height:92vh}.about-editorial__grid{grid-template-columns:1fr}.about-editorial__frame{justify-self:start}.care-editorial{min-height:460px}.care-editorial__content{flex-direction:column;align-items:flex-start;justify-content:flex-end}.care-editorial__copy{max-width:100%}.popular-shapes{gap:1.5rem}.popular-shape-card{width:30%;max-width:220px}.popular-shape-card img{height:290px}.option-links{justify-content:center;gap:2.75rem}.option-card{width:170px}.option-card img{height:220px}}
+@media (max-width:767.98px){.site-header__logo{width:40px;height:40px}.hero{padding-top:7rem}.hero__title{font-size:3rem}.popular-shapes{flex-direction:column;align-items:center}.popular-shape-card{width:min(100%,230px);max-width:230px}.popular-shape-card img{height:310px}.about-editorial__copy p,.care-editorial__copy p{font-size:1.2rem}.care-editorial__title{font-size:2rem;align-self:flex-end}.inspiration-strip{grid-template-columns:1fr}.option-links{flex-direction:column;align-items:center;gap:2rem}.option-card{width:min(100%,220px)}.option-card img{height:280px}}
+@media (min-width:1440px){.container-salerno{max-width:1320px}}
+.navbar-brand {
+    padding: 0;
+    margin-right: 0.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-header__logo {
+    display: block;
+    height: 70px !important;
+    width: auto !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+  @media (max-width: 767.98px) {
+    .portada-index{
+        background-image: url('../assets/img/portadaIndexCelu.jpeg') !important;
+    }
+    .portada-aro{
+        background-image: url('../assets/img/portadaAroCelu.jpeg')!important;
+        background-position: center 30% !important;
+    }
+    .portada-anillo{
+        background-image: url('../assets/img/portadaAnillo.jpeg') !important;
+        background-position: center 30% !important;
+      }
+    .portada-pulsera{
+        background-image: url('../assets/img/portadaPulseraCelu.jpeg') !important;
+        background-position: center 30% !important;
+      }
+    .option-links {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 2rem !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .hero--home .hero__content--minimal {
+        margin-left: 6%;
+        margin-top: 25rem;
+      }
+      .hero--home .hero__content--minimal .hero__title{
+        color: #8b896f;
+    }
+    .option-links .option-card,
+    .option-links .option-card:nth-child(1),
+    .option-links .option-card:nth-child(2),
+    .option-links .option-card:nth-child(3),
+    .option-links .option-card:nth-child(4),
+    .option-links .option-card:nth-child(5) {
+      grid-column: auto !important;
+      width: 220px !important;
+    }
+  
+    .option-card img {
+      width: 100% !important;
+      height: 280px !important;
+      object-fit: cover !important;
+      border-radius: 999px 999px 0 0 !important;
+    }
+  
+    .option-card span {
+      display: block !important;
+      width: 100% !important;
+      text-align: left !important;
+      margin-top: 0.75rem !important;
+    }
+  }
+  @media (min-width: 1080px){
+    .portada-collar{
+        background-image: url('../assets/img/portadaCollarCompu.jpeg')!important;
+        background-position: center 30% !important;
+    }
+  }

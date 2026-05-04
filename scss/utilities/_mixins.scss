@@ -1,0 +1,18 @@
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin section-title {
+  font-family: $font-accent;
+  font-size: 2rem;
+  color: #865334;
+  margin-bottom: 1rem;
+}
+
+@mixin card-soft {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 25px rgba(134, 83, 52, 0.08);
+}

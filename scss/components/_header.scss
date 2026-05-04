@@ -1,0 +1,22 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  height: 0;
+  padding-top: 0.55rem;
+  pointer-events: none;
+}
+
+.site-header__logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.site-header__brand {
+  font-family: $font-accent;
+  color: #865334;
+  font-size: 1.35rem;
+}

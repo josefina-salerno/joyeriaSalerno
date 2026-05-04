@@ -1,0 +1,12 @@
+{
+  "name": "joyeria-salerno",
+  "version": "1.0.0",
+  "description": "Sitio web de Joyeria Salerno hecho con HTML, SCSS y Bootstrap",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}

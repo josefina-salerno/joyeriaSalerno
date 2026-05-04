@@ -1,0 +1,53 @@
+@media (max-width: 991.98px) {
+  .nav-shell {
+    width: calc(100vw - 18px) !important;
+    border-radius: 1.2rem;
+    padding: 0.35rem 0.9rem;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.55rem;
+    background: rgba(235, 227, 213, 0.95);
+    border-radius: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar-nav {
+    align-items: flex-start !important;
+  }
+
+  .hero--home {
+    min-height: 92vh;
+  }
+
+  .about-editorial__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-editorial__frame {
+    justify-self: start;
+  }
+
+  .care-editorial {
+    min-height: 460px;
+  }
+
+  .care-editorial__content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .care-editorial__copy {
+    max-width: 100%;
+  }
+
+  .popular-shapes {
+    gap: 1rem;
+  }
+
+  .option-links {
+    gap: 2.4rem;
+  }
+}
+
